@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .box1{
+                    height:280px;
+                    width:780px;
+                    background-color:seagreen;
+                 }
+            .box2{
+                    height:280px;
+                    width:780px;
+                    background-color:orange;
+                    position:relative;
+                    left:20px;
+                 }
+
+                 div{
+                width:200px;
+                height:170px;
+                border:5px solid green;
+                overflow:visible;
+               }
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+    
+    <h2 style="color:blue; font-style:italic; width:550px; font-size: 25px;">Wap in Js to enter temperature in celcius & convert into Fahrenheit..???</h2>
+    <label>enter the temperature in celcius:: </label>
+    <input type="text" id="v2">
+    <button type="button" onclick="fn3()"> click it::</button>
+    
+    <label>result::</label>
+    <input type="text" id="v3"><br>
+
+    <script>
+        function fn3()
+        {
+
+    
+
+var temperature=Number(document.getElementById("v2").value);
+var Fahrenheit=temperature*9/5+32;
+document.getElementById("v3").value=Fahrenheit;
+
+        }
+   </script>
+    <h2 style="color:blue; font-style: italic; font-size: 25px;"> Q.Wap in Js to convert days into years weaks and days...???</h2>
+    <label> Enter the no of days::</label>
+    <input type="text" id="d1">
+    <button type="button" onclick="fn5()"> convert::</button>
+    <label> Dispaly the result in year is ::</label>
+    <input type="text" id="d2"><br>
+    <script>
+function fn5()
+{
+    var days=Number(document.getElementById("d1").value);
+var year=days/365;
+document.getElementById("d2").value=year;
+
+
+}
+
+    </script>
+    <br><br>
+    <label> Enter the no of days::</label>
+    <input type="text" id="d3">
+    <button type="button" onclick="fn6()"> convert::</button>
+    <label> Dispaly the result in weeks is ::</label>
+    <input type="text" id="d4"><br>
+    <script>
+function fn6()
+{
+var days=Number(document.getElementById("d3").value);
+var weeks=days/7;
+document.getElementById("d4").value=weeks;
+
+}
+
+    </script>
+    </div>
+    </div>
+</body>
+</html>
